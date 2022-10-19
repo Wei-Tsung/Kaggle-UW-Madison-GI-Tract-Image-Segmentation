@@ -38,7 +38,6 @@ Work funded by the University of Wisconsin Carbone Cancer Center Pancreas Pilot 
 
 
 # Dataset Description
-----
 
 In this competition we are segmenting organs cells in images. The training annotations are provided as RLE-encoded masks, and the images are in 16-bit grayscale PNG format.
 
