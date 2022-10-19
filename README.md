@@ -15,7 +15,9 @@ In this figure, the tumor (pink thick line) is close to the stomach (red thick l
 Cancer takes enough of a toll. If successful, you'll enable radiation oncologists to safely deliver higher doses of radiation to tumors while avoiding the stomach and intestines. This will make cancer patients' daily treatments faster and allow them to get more effective treatment with less side effects and better long-term cancer control.
 
 
-Acknowledgments:
+Acknowledgments
+----
+
 Sangjune Laurence Lee MSE MD FRCPC DABR
 Poonam Yadav Ph.D., DABR
 Yin Li PhD
