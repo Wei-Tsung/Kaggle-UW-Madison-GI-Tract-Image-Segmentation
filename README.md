@@ -1,4 +1,5 @@
 # Kaggle-UW-Madison-GI-Tract-Image-Segmentation
+Kaggle Competition Link : https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation
 
 Background 
 ----
