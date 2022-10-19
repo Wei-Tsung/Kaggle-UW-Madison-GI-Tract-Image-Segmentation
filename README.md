@@ -36,3 +36,31 @@ Michael Bassetti MD PhD
 
 Work funded by the University of Wisconsin Carbone Cancer Center Pancreas Pilot Research Grant.
 
+
+# Dataset Description
+----
+
+In this competition we are segmenting organs cells in images. The training annotations are provided as RLE-encoded masks, and the images are in 16-bit grayscale PNG format.
+
+Each case in this competition is represented by multiple sets of scan slices (each set is identified by the day the scan took place). Some cases are split by time (early days are in train, later days are in test) while some cases are split by case - the entirety of the case is in train or test. The goal of this competition is to be able to generalize to both partially and wholly unseen cases.
+
+Note that, in this case, the test set is entirely unseen. It is roughly 50 cases, with a varying number of days and slices, as seen in the training set.
+
+How does an entirely hidden test set work?
+The test set in this competition is only available when your code is submitted. The sample_submission.csv provided in the public set is an empty placeholder that shows the required submission format; you should perform your modeling, cross-validation, etc., using the training set, and write code to process a non-empty sample submission. It will contain rows with id, class and predicted columns as described in the Evaluation page.
+
+When you submit your notebook, your code will be run against the non-hidden test set, which has the same folder format (<case>/<case_day>/<scans>) as the training data.
+
+Files
+train.csv - IDs and masks for all training objects.
+sample_submission.csv - a sample submission file in the correct format
+train - a folder of case/day folders, each containing slice images for a particular case on a given day.
+Note that the image filenames include 4 numbers (ex. 276_276_1.63_1.63.png). These four numbers are slice height / width (integers in pixels) and heigh/width pixel spacing (floating points in mm). The first two defines the resolution of the slide. The last two record the physical size of each pixel.
+
+Physical pixel thickness in superior-inferior direction is 3mm.
+
+Columns
+id - unique identifier for object
+class - the predicted class for the object
+EncodedPixels - RLE-encoded pixels for the identified object
+
