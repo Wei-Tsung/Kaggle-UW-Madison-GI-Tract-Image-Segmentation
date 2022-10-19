@@ -51,16 +51,18 @@ The test set in this competition is only available when your code is submitted. 
 
 When you submit your notebook, your code will be run against the non-hidden test set, which has the same folder format (<case>/<case_day>/<scans>) as the training data.
 
-Files
-train.csv - IDs and masks for all training objects.
-sample_submission.csv - a sample submission file in the correct format
+- Files
+
+- train.csv - IDs and masks for all training objects.
+- sample_submission.csv - a sample submission file in the correct format
+
 train - a folder of case/day folders, each containing slice images for a particular case on a given day.
 Note that the image filenames include 4 numbers (ex. 276_276_1.63_1.63.png). These four numbers are slice height / width (integers in pixels) and heigh/width pixel spacing (floating points in mm). The first two defines the resolution of the slide. The last two record the physical size of each pixel.
 
 Physical pixel thickness in superior-inferior direction is 3mm.
 
 Columns
-id - unique identifier for object
-class - the predicted class for the object
-EncodedPixels - RLE-encoded pixels for the identified object
+- id - unique identifier for object
+- class - the predicted class for the object
+- EncodedPixels - RLE-encoded pixels for the identified object
 
