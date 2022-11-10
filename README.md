@@ -4,7 +4,7 @@
 Solution Ranking : Bronze Medal
 ----
  
-<img src="https://storage.googleapis.com/kaggle-competitions/kaggle/27923/logos/header.png?t=2021-06-02-20-30-25">
+<img src="https://img-blog.csdnimg.cn/3048471687064915ba595d5b23723053.png">
 
 
 [Kaggle Competition Link : Click Here]()
