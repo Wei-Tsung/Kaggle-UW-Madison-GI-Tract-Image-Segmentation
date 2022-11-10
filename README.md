@@ -4,7 +4,7 @@
 Solution Ranking : Bronze Medal
 ----
  
-<img src="https://storage.googleapis.com/kaggle-competitions/kaggle/27923/logos/header.png">
+<img src="https://storage.googleapis.com/kaggle-datasets-images/2112105/3514396/5090c92bfd6dceccf9637f398cd2109e/dataset-cover.jpg?t=2022-04-23-11-22-31">
 
 
 ![Kaggle Competition Link : Click Here](https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation)
@@ -24,7 +24,7 @@ This competition is evaluated on the <strong>mean Dice coefficient</strong> and 
 - The Dice coefficient can be used to compare the pixel-wise agreement between a predicted segmentation and its corresponding ground truth. 
 The Dice coefficient is defined to be 0 when both X and Y are empty. The leaderboard score is the mean of the Dice coefficients for each image in the test set.
 
-Hausdorff distance is a method for calculating the distance between segmentation objects A and B, by calculating the furthest point on object A from the nearest point on object B. For 3D Hausdorff, we construct 3D volumes by combining each 2D segmentation with slice depth as the Z coordinate and then find the Hausdorff distance between them. (In this competition, the slice depth for all scans is set to 1.) The scipy code for Hausdorff is linked. The expected / predicted pixel locations are normalized by image size to create a bounded 0-1 score.
+- Hausdorff distance is a method for calculating the distance between segmentation objects A and B, by calculating the furthest point on object A from the nearest point on object B. For 3D Hausdorff, we construct 3D volumes by combining each 2D segmentation with slice depth as the Z coordinate and then find the Hausdorff distance between them. (In this competition, the slice depth for all scans is set to 1.) The scipy code for Hausdorff is linked. The expected / predicted pixel locations are normalized by image size to create a bounded 0-1 score.
 
 The two metrics are combined, with a weight of 0.4 for the Dice metric and 0.6 for the Hausdorff distance.
 
