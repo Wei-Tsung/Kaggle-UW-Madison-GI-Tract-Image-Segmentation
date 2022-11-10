@@ -10,6 +10,7 @@ Solution Ranking : Bronze Medal
 
 [Kaggle Competition Link : Click Here](https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation](https://storage.googleapis.com/kaggle-competitions/kaggle/27923/logos/header.png?t=2021-06-02-20-30-25)
 
+
 Task
 -----
 
