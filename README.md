@@ -19,48 +19,10 @@ Gastrointestinal tract Image-Segmentation
 Evaluation
 -----
 
-This competition is evaluated on the mean Dice coefficient and 3D Hausdorff distance. The Dice coefficient can be used to compare the pixel-wise agreement between a predicted segmentation and its corresponding ground truth. 
+This competition is evaluated on the <strong>mean Dice coefficient</strong> and <strong>3D Hausdorff distance.</strong> 
 
-The formula is given by:
-
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mfrac>
-    <mrow>
-      <mn>2</mn>
-      <mo>&#x2217;<!-- ∗ --></mo>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mi>X</mi>
-      <mo>&#x2229;<!-- ∩ --></mo>
-      <mi>Y</mi>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-    </mrow>
-    <mrow>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mi>X</mi>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mo>+</mo>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mi>Y</mi>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-    </mrow>
-  </mfrac>
-  <mo>,</mo>
-</math>
-
-
-where X is the predicted set of pixels and Y is the ground truth. The Dice coefficient is defined to be 0 when both X and Y are empty. The leaderboard score is the mean of the Dice coefficients for each image in the test set.
+- The Dice coefficient can be used to compare the pixel-wise agreement between a predicted segmentation and its corresponding ground truth. 
+The Dice coefficient is defined to be 0 when both X and Y are empty. The leaderboard score is the mean of the Dice coefficients for each image in the test set.
 
 Hausdorff distance is a method for calculating the distance between segmentation objects A and B, by calculating the furthest point on object A from the nearest point on object B. For 3D Hausdorff, we construct 3D volumes by combining each 2D segmentation with slice depth as the Z coordinate and then find the Hausdorff distance between them. (In this competition, the slice depth for all scans is set to 1.) The scipy code for Hausdorff is linked. The expected / predicted pixel locations are normalized by image size to create a bounded 0-1 score.
 
